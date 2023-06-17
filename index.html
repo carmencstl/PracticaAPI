@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Práctica API</title>
+</head>
+<body>
+    <input type="file" accept="video/mp4" onchange="loadVideo(this.files[0])">
+    <div>
+        <video id="player" controls>
+            <source src="" type="video/mp4">
+        </video>
+    </div>
+    <div>
+        <button id="play">Reproducir</button>
+        <button id="stop">Pausar</button>
+        <input id="slider" type="range" min="0" max="1" step="0.01" value="1">
+    </div>
+    <div id="loading" style="display:none;">Cargando vídeo...</div>
+    <script src="script.js"></script>
+</body>
+</html>
